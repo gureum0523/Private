@@ -283,13 +283,14 @@
       "id": "1774791413327",
       "assetClass": "save",
       "productName": "미래에셋예수금",
-      "kind": "other",
+      "kind": "manual",
       "currency": "KRW",
       "principal": 515243,
       "interestRate": 0,
       "startDate": "2026-01-01",
       "endDate": "2026-12-31",
-      "memo": ""
+      "memo": "",
+      "currentAmount": 515243
     },
     {
       "id": "1774791511569",
@@ -417,5 +418,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-29T16:27:16.787Z"
+  "savedAt": "2026-03-29T16:29:50.649Z"
 }

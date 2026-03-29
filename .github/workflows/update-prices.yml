@@ -1,1 +1,100 @@
-
+name: Update Stock Prices
+ 
+'on':
+  schedule:
+    - cron: '0 23 * * 1-5'
+  workflow_dispatch:
+ 
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+ 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+ 
+      - name: Fetch prices and rates
+        run: |
+          python3 << 'EOF'
+          import urllib.request
+          import json
+          import time
+ 
+          US_TICKERS = ["VTI","GLDM","VOO","BRK-B","QQQM","AAPL","NVDA","EPI","TSLA","GOOGL"]
+          KR_TICKERS = ["379800.KS","0046A0.KS","0060H0.KS","0072R0.KS","130680.KS","453870.KS","073240.KS"]
+          FX_PAIRS   = ["USDKRW=X","SARKRW=X","JPYKRW=X"]
+ 
+          ALL_SYMBOLS = US_TICKERS + KR_TICKERS + FX_PAIRS
+ 
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Accept": "application/json",
+          }
+ 
+          prices = {}
+ 
+          def chunks(lst, n):
+              for i in range(0, len(lst), n):
+                  yield lst[i:i+n]
+ 
+          for batch in chunks(ALL_SYMBOLS, 10):
+              symbols_str = ",".join(batch)
+              url = f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={symbols_str}&fields=regularMarketPrice,regularMarketPreviousClose"
+              try:
+                  req = urllib.request.Request(url, headers=headers)
+                  with urllib.request.urlopen(req, timeout=15) as resp:
+                      data = json.loads(resp.read())
+                  results = data.get("quoteResponse", {}).get("result", [])
+                  for item in results:
+                      sym   = item.get("symbol", "")
+                      price = item.get("regularMarketPrice") or item.get("regularMarketPreviousClose")
+                      if price:
+                          prices[sym] = price
+              except Exception as e:
+                  print(f"Error fetching {batch}: {e}")
+              time.sleep(0.5)
+ 
+          def get(sym):
+              return prices.get(sym) or None
+ 
+          output = {
+              "rates": {
+                  "USD": get("USDKRW=X") or 1350,
+                  "SAR": get("SARKRW=X") or 360,
+                  "JPY": get("JPYKRW=X") or 9.0,
+              },
+              "us": {},
+              "kr": {},
+          }
+ 
+          for t in US_TICKERS:
+              p = get(t)
+              if p:
+                  key = "BRK.B" if t == "BRK-B" else t
+                  output["us"][key] = p
+ 
+          for t in KR_TICKERS:
+              code = t.replace(".KS", "")
+              p = get(t)
+              if p:
+                  output["kr"][code] = p
+ 
+          import datetime
+          output["updatedAt"] = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+ 
+          with open("prices.json", "w") as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+ 
+          print("Done!")
+          print(json.dumps(output, ensure_ascii=False, indent=2))
+          EOF
+ 
+      - name: Commit prices.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add prices.json
+          git diff --cached --quiet || git commit -m "chore: update prices $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push

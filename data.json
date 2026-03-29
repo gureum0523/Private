@@ -383,13 +383,14 @@
       "id": "1774791828531",
       "assetClass": "save",
       "productName": "SAB",
-      "kind": "other",
+      "kind": "manual",
       "currency": "SAR",
       "principal": 34000,
       "interestRate": 0,
       "startDate": "2026-01-01",
       "endDate": "2026-12-31",
-      "memo": ""
+      "memo": "",
+      "currentAmount": 34000
     },
     {
       "id": "1774792698430",
@@ -421,5 +422,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-29T16:30:24.211Z"
+  "savedAt": "2026-03-29T16:30:32.675Z"
 }

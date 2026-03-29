@@ -246,13 +246,14 @@
       "id": "1774791198835",
       "assetClass": "save",
       "productName": "PLUS국공채머니마켓액티브",
-      "kind": "deposit",
+      "kind": "manual",
       "currency": "KRW",
       "principal": 2987000,
-      "interestRate": 2.82,
+      "interestRate": 0,
       "startDate": "2026-01-01",
       "endDate": "2026-12-31",
-      "memo": ""
+      "memo": "",
+      "currentAmount": 3006140
     },
     {
       "id": "1774791241687",
@@ -416,5 +417,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-29T16:26:46.695Z"
+  "savedAt": "2026-03-29T16:27:16.787Z"
 }

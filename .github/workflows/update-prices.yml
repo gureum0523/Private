@@ -56,10 +56,15 @@ jobs:
           }
  
           print("=== 환율 ===")
-          for pair, key in [("USDKRW=X","USD"),("SARKRW=X","SAR"),("JPYKRW=X","JPY")]:
+          for pair, key in [("USDKRW=X","USD"),("JPYKRW=X","JPY")]:
               p = fetch_one(pair)
               if p: output["rates"][key] = round(p, 4)
               time.sleep(0.3)
+ 
+          # SAR은 USD에 고정 페그 (1 USD = 3.75 SAR)
+          usd_krw = output["rates"]["USD"]
+          output["rates"]["SAR"] = round(usd_krw / 3.75, 4)
+          print(f"  ✅ SAR/KRW (USD 페그): {output['rates']['SAR']}")
  
           print("=== 미국 주식 ===")
           for t in US_TICKERS:

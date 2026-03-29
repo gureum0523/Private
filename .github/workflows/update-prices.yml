@@ -25,10 +25,10 @@ jobs:
           import json
           import datetime
           import time
+          import os
  
           US_TICKERS = ["VTI","GLDM","VOO","BRK-B","QQQM","AAPL","NVDA","EPI","TSLA","GOOGL"]
           KR_TICKERS = ["379800.KS","0046A0.KS","0060H0.KS","0072R0.KS","130680.KS","453870.KS","073240.KS"]
-          FX_PAIRS   = ["USDKRW=X","SARKRW=X","JPYKRW=X"]
  
           def fetch_one(ticker):
               try:
@@ -38,7 +38,6 @@ jobs:
                       price = float(hist["Close"].dropna().iloc[-1])
                       print(f"  ✅ {ticker}: {price}")
                       return price
-                  # fast_info fallback
                   info = t.fast_info
                   price = getattr(info, "last_price", None) or getattr(info, "regular_market_price", None)
                   if price:
@@ -48,23 +47,25 @@ jobs:
                   print(f"  ❌ {ticker}: {e}")
               return None
  
+          now = datetime.datetime.now(datetime.timezone.utc)
+          today = now.strftime("%Y-%m-%d")
+ 
           output = {
               "rates": { "USD": 1350, "SAR": 360, "JPY": 9.0 },
               "us": {},
               "kr": {},
-              "updatedAt": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+              "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ")
           }
  
           print("=== 환율 ===")
-          for pair, key in [("USDKRW=X","USD"),("JPYKRW=X","JPY")]:
-              p = fetch_one(pair)
-              if p: output["rates"][key] = round(p, 4)
-              time.sleep(0.3)
- 
-          # SAR은 USD에 고정 페그 (1 USD = 3.75 SAR)
-          usd_krw = output["rates"]["USD"]
-          output["rates"]["SAR"] = round(usd_krw / 3.75, 4)
-          print(f"  ✅ SAR/KRW (USD 페그): {output['rates']['SAR']}")
+          usd_krw = fetch_one("USDKRW=X") or 1350
+          jpy_krw = fetch_one("JPYKRW=X") or 9.0
+          sar_krw = round(usd_krw / 3.75, 4)
+          output["rates"]["USD"] = usd_krw
+          output["rates"]["SAR"] = sar_krw
+          output["rates"]["JPY"] = jpy_krw
+          print(f"  ✅ SAR/KRW (USD 페그): {sar_krw}")
+          time.sleep(0.3)
  
           print("=== 미국 주식 ===")
           for t in US_TICKERS:
@@ -80,17 +81,82 @@ jobs:
               if p: output["kr"][code] = round(p, 0)
               time.sleep(0.3)
  
-          with open("prices.json","w") as f:
+          # prices.json 저장
+          with open("prices.json", "w") as f:
               json.dump(output, f, ensure_ascii=False, indent=2)
+          print("\n✅ prices.json 저장 완료")
+ 
+          # ── 데일리 스냅샷 ──────────────────────────────
+          # data.json 읽어서 현재 자산 기준으로 평가금액 계산
+          snapshot = {
+              "date": today,
+              "rates": output["rates"],
+              "prices": { "us": output["us"], "kr": output["kr"] },
+              "totalKrw": None,
+              "breakdown": {}
+          }
+ 
+          try:
+              with open("data.json", "r") as f:
+                  data = json.load(f)
+              assets = data.get("assets", [])
+ 
+              def to_krw(amount, cur, rates):
+                  if cur == "KRW": return amount
+                  return amount * rates.get(cur, 1)
+ 
+              total = 0
+              breakdown = { "us": 0, "kr": 0, "sa": 0, "jp": 0, "save": 0 }
+ 
+              for a in assets:
+                  if a.get("assetClass") == "stock":
+                      mkt = a.get("market","us")
+                      cur = {"us":"USD","kr":"KRW","sa":"SAR","jp":"JPY"}.get(mkt,"USD")
+                      ticker = a.get("ticker","")
+                      price_map = output["us"] if mkt == "us" else output["kr"]
+                      key = next((k for k in price_map if k.upper()==ticker.upper()), None)
+                      price = price_map.get(key) if key else a.get("currentPrice") or a.get("avgPrice",0)
+                      val_native = float(price or 0) * float(a.get("qty",0))
+                      val_krw = to_krw(val_native, cur, output["rates"])
+                      total += val_krw
+                      breakdown[mkt] = breakdown.get(mkt,0) + val_krw
+                  elif a.get("assetClass") == "save":
+                      cur = a.get("currency","KRW")
+                      principal = float(a.get("principal",0))
+                      rate = float(a.get("interestRate",0)) / 100
+                      start = a.get("startDate","")
+                      if start:
+                          from datetime import date
+                          days = (date.today() - date.fromisoformat(start)).days
+                      else:
+                          days = 0
+                      interest = principal * rate * (days / 365)
+                      val_native = principal + interest
+                      val_krw = to_krw(val_native, cur, output["rates"])
+                      total += val_krw
+                      breakdown["save"] = breakdown.get("save",0) + val_krw
+ 
+              snapshot["totalKrw"] = round(total)
+              snapshot["breakdown"] = {k: round(v) for k,v in breakdown.items()}
+              print(f"\n📊 오늘 총자산: ₩{total:,.0f}")
+          except Exception as e:
+              print(f"⚠️ 스냅샷 계산 실패: {e}")
+ 
+          # history 폴더에 저장
+          os.makedirs("history", exist_ok=True)
+          snap_path = f"history/{today}.json"
+          with open(snap_path, "w") as f:
+              json.dump(snapshot, f, ensure_ascii=False, indent=2)
+          print(f"✅ {snap_path} 저장 완료")
  
           print("\n=== 최종 결과 ===")
           print(json.dumps(output, ensure_ascii=False, indent=2))
           EOF
  
-      - name: Commit prices.json
+      - name: Commit prices.json and snapshot
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add prices.json
-          git diff --cached --quiet || git commit -m "chore: update prices $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git add prices.json history/
+          git diff --cached --quiet || git commit -m "chore: update prices & snapshot $(date -u '+%Y-%m-%d') UTC"
           git push

@@ -643,6 +643,20 @@
       "avgPrice": 9655,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882739890",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "0060H0",
+      "name": "TIGER토탈월드스탁액티브",
+      "type": "etf",
+      "qty": 483,
+      "avgPrice": 10328,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -650,5 +664,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:58:21.287Z"
+  "savedAt": "2026-03-30T14:58:59.890Z"
 }

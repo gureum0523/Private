@@ -570,6 +570,21 @@
       "avgPrice": 21317,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882537521",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "ISA",
+      "productName": "예수금",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 231159,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 231159
     }
   ],
   "rates": {
@@ -577,5 +592,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:55:00.892Z"
+  "savedAt": "2026-03-30T14:55:37.521Z"
 }

@@ -15,148 +15,157 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
  
-      - name: Install dependencies
-        run: pip install "yfinance>=0.2.50" requests --quiet
+      - name: Install yfinance
+        run: pip install "yfinance>=0.2.50" --quiet
  
-      - name: Fetch prices and rates
+      - name: Fetch prices
         run: |
-          python3 << 'EOF'
+          python3 - <<'PYEOF'
           import yfinance as yf
           import json
           import datetime
           import time
           import os
  
-          US_TICKERS = ["VTI","GLDM","VOO","BRK-B","QQQM","AAPL","NVDA","EPI","TSLA","GOOGL"]
-          KR_TICKERS = ["379800.KS","0046A0.KS","0060H0.KS","0072R0.KS","130680.KS","453870.KS","073240.KS","192090.KS","435420.KS","463250.KS"]
+          US_TICKERS = [
+            "VTI", "GLDM", "VOO", "BRK-B", "QQQM",
+            "AAPL", "NVDA", "EPI", "TSLA", "GOOGL"
+          ]
+ 
+          KR_TICKERS = [
+            "379800.KS", "0046A0.KS", "0060H0.KS", "0072R0.KS",
+            "130680.KS", "453870.KS", "073240.KS",
+            "192090.KS", "435420.KS", "463250.KS"
+          ]
  
           def fetch_one(ticker):
-              try:
-                  t = yf.Ticker(ticker)
-                  hist = t.history(period="5d", interval="1d")
-                  if not hist.empty:
-                      price = float(hist["Close"].dropna().iloc[-1])
-                      print(f"  ✅ {ticker}: {price}")
-                      return price
-                  info = t.fast_info
-                  price = getattr(info, "last_price", None) or getattr(info, "regular_market_price", None)
-                  if price:
-                      print(f"  ✅ {ticker} (fast_info): {price}")
-                      return float(price)
-              except Exception as e:
-                  print(f"  ❌ {ticker}: {e}")
-              return None
+            try:
+              t = yf.Ticker(ticker)
+              hist = t.history(period="5d", interval="1d")
+              if not hist.empty:
+                price = float(hist["Close"].dropna().iloc[-1])
+                print(f"  OK {ticker}: {price}")
+                return price
+              info = t.fast_info
+              price = getattr(info, "last_price", None) or getattr(info, "regular_market_price", None)
+              if price:
+                print(f"  OK {ticker} (fast_info): {price}")
+                return float(price)
+            except Exception as e:
+              print(f"  FAIL {ticker}: {e}")
+            return None
  
           now = datetime.datetime.now(datetime.timezone.utc)
           today = now.strftime("%Y-%m-%d")
  
           output = {
-              "rates": { "USD": 1350, "SAR": 360, "JPY": 9.0 },
-              "us": {},
-              "kr": {},
-              "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ")
+            "rates": {"USD": 1350, "SAR": 360, "JPY": 9.0},
+            "us": {},
+            "kr": {},
+            "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ")
           }
  
-          print("=== 환율 ===")
+          print("=== Exchange Rates ===")
           usd_krw = fetch_one("USDKRW=X") or 1350
           jpy_krw = fetch_one("JPYKRW=X") or 9.0
           sar_krw = round(usd_krw / 3.75, 4)
           output["rates"]["USD"] = usd_krw
           output["rates"]["SAR"] = sar_krw
           output["rates"]["JPY"] = jpy_krw
-          print(f"  ✅ SAR/KRW (USD 페그): {sar_krw}")
+          print(f"  SAR/KRW (USD peg): {sar_krw}")
           time.sleep(0.3)
  
-          print("=== 미국 주식 ===")
+          print("=== US Stocks ===")
           for t in US_TICKERS:
-              p = fetch_one(t)
-              key = "BRK.B" if t == "BRK-B" else t
-              if p: output["us"][key] = round(p, 4)
-              time.sleep(0.3)
+            p = fetch_one(t)
+            key = "BRK.B" if t == "BRK-B" else t
+            if p:
+              output["us"][key] = round(p, 4)
+            time.sleep(0.3)
  
-          print("=== 한국 주식 ===")
+          print("=== KR Stocks ===")
           for t in KR_TICKERS:
-              p = fetch_one(t)
-              code = t.replace(".KS","")
-              if p: output["kr"][code] = round(p, 0)
-              time.sleep(0.3)
+            p = fetch_one(t)
+            code = t.replace(".KS", "")
+            if p:
+              output["kr"][code] = round(p, 0)
+            time.sleep(0.3)
  
           # prices.json 저장
           with open("prices.json", "w") as f:
-              json.dump(output, f, ensure_ascii=False, indent=2)
-          print("\n✅ prices.json 저장 완료")
+            json.dump(output, f, ensure_ascii=False, indent=2)
+          print("\nprices.json saved")
  
-          # ── 데일리 스냅샷 ──────────────────────────────
-          # data.json 읽어서 현재 자산 기준으로 평가금액 계산
+          # 데일리 스냅샷
           snapshot = {
-              "date": today,
-              "rates": output["rates"],
-              "prices": { "us": output["us"], "kr": output["kr"] },
-              "totalKrw": None,
-              "breakdown": {}
+            "date": today,
+            "rates": output["rates"],
+            "prices": {"us": output["us"], "kr": output["kr"]},
+            "totalKrw": None,
+            "breakdown": {}
           }
  
           try:
-              with open("data.json", "r") as f:
-                  data = json.load(f)
-              assets = data.get("assets", [])
+            with open("data.json", "r") as f:
+              data = json.load(f)
+            assets = data.get("assets", [])
  
-              def to_krw(amount, cur, rates):
-                  if cur == "KRW": return amount
-                  return amount * rates.get(cur, 1)
+            def to_krw(amount, cur, rates):
+              if cur == "KRW":
+                return amount
+              return amount * rates.get(cur, 1)
  
-              total = 0
-              breakdown = { "us": 0, "kr": 0, "sa": 0, "jp": 0, "save": 0 }
+            total = 0
+            breakdown = {"aw": 0, "ms": 0, "kr": 0, "sa": 0, "save": 0}
  
-              for a in assets:
-                  if a.get("assetClass") == "stock":
-                      mkt = a.get("market","us")
-                      cur = {"us":"USD","kr":"KRW","sa":"SAR","jp":"JPY"}.get(mkt,"USD")
-                      ticker = a.get("ticker","")
-                      price_map = output["us"] if mkt == "us" else output["kr"]
-                      key = next((k for k in price_map if k.upper()==ticker.upper()), None)
-                      price = price_map.get(key) if key else a.get("currentPrice") or a.get("avgPrice",0)
-                      val_native = float(price or 0) * float(a.get("qty",0))
-                      val_krw = to_krw(val_native, cur, output["rates"])
-                      total += val_krw
-                      breakdown[mkt] = breakdown.get(mkt,0) + val_krw
-                  elif a.get("assetClass") == "save":
-                      cur = a.get("currency","KRW")
-                      principal = float(a.get("principal",0))
-                      rate = float(a.get("interestRate",0)) / 100
-                      start = a.get("startDate","")
-                      if start:
-                          from datetime import date
-                          days = (date.today() - date.fromisoformat(start)).days
-                      else:
-                          days = 0
-                      interest = principal * rate * (days / 365)
-                      val_native = principal + interest
-                      val_krw = to_krw(val_native, cur, output["rates"])
-                      total += val_krw
-                      breakdown["save"] = breakdown.get("save",0) + val_krw
+            for a in assets:
+              if a.get("assetClass") == "stock":
+                mkt = a.get("mainAcct", "ms")
+                cur = a.get("currency", "USD")
+                ticker = a.get("ticker", "")
+                price_map = output["kr"] if cur == "KRW" else output["us"]
+                key = next((k for k in price_map if k.upper() == ticker.upper()), None)
+                price = price_map.get(key) if key else (a.get("currentPrice") or a.get("avgPrice", 0))
+                val_krw = to_krw(float(price or 0) * float(a.get("qty", 0)), cur, output["rates"])
+                total += val_krw
+                breakdown[mkt] = breakdown.get(mkt, 0) + val_krw
+              elif a.get("assetClass") == "save":
+                cur = a.get("currency", "KRW")
+                principal = float(a.get("principal", 0))
+                rate = float(a.get("interestRate", 0)) / 100
+                start = a.get("startDate", "")
+                days = 0
+                if start:
+                  from datetime import date
+                  try:
+                    days = (date.today() - date.fromisoformat(start)).days
+                  except:
+                    pass
+                current = a.get("currentAmount") or (principal + principal * rate * (days / 365))
+                val_krw = to_krw(current, cur, output["rates"])
+                total += val_krw
+                breakdown["save"] = breakdown.get("save", 0) + val_krw
  
-              snapshot["totalKrw"] = round(total)
-              snapshot["breakdown"] = {k: round(v) for k,v in breakdown.items()}
-              print(f"\n📊 오늘 총자산: ₩{total:,.0f}")
+            snapshot["totalKrw"] = round(total)
+            snapshot["breakdown"] = {k: round(v) for k, v in breakdown.items()}
+            print(f"Total KRW: {total:,.0f}")
+ 
           except Exception as e:
-              print(f"⚠️ 스냅샷 계산 실패: {e}")
+            print(f"Snapshot calc failed: {e}")
  
-          # history 폴더에 저장
           os.makedirs("history", exist_ok=True)
-          snap_path = f"history/{today}.json"
-          with open(snap_path, "w") as f:
-              json.dump(snapshot, f, ensure_ascii=False, indent=2)
-          print(f"✅ {snap_path} 저장 완료")
+          with open(f"history/{today}.json", "w") as f:
+            json.dump(snapshot, f, ensure_ascii=False, indent=2)
+          print(f"history/{today}.json saved")
  
-          print("\n=== 최종 결과 ===")
+          print("\n=== Result ===")
           print(json.dumps(output, ensure_ascii=False, indent=2))
-          EOF
+          PYEOF
  
-      - name: Commit prices.json and snapshot
+      - name: Commit
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add prices.json history/
-          git diff --cached --quiet || git commit -m "chore: update prices & snapshot $(date -u '+%Y-%m-%d') UTC"
+          git diff --cached --quiet || git commit -m "chore: update prices $(date -u '+%Y-%m-%d') UTC"
           git push

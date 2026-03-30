@@ -946,6 +946,20 @@
       "avgPrice": 0.02,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883802727",
+      "assetClass": "stock",
+      "mainAcct": "sa",
+      "subAcct": "주식",
+      "currency": "SAR",
+      "ticker": "1214",
+      "name": "SHAKER(d)",
+      "type": "stock",
+      "qty": 123,
+      "avgPrice": 23.42,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -953,5 +967,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:14:23.559Z"
+  "savedAt": "2026-03-30T15:16:42.728Z"
 }

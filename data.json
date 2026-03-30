@@ -657,6 +657,20 @@
       "avgPrice": 10328,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882774100",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "0072R0",
+      "name": "TIGERKRX금현물",
+      "type": "etf",
+      "qty": 1026,
+      "avgPrice": 9745,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -664,5 +678,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:58:59.890Z"
+  "savedAt": "2026-03-30T14:59:34.100Z"
 }

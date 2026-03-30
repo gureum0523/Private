@@ -471,6 +471,20 @@
       "avgPrice": 484.32,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774875957961",
+      "assetClass": "stock",
+      "mainAcct": "aw",
+      "subAcct": "Stock",
+      "currency": "USD",
+      "ticker": "QQQM",
+      "name": "Invesco NASDAQ 100 ETF",
+      "type": "etf",
+      "qty": 20.74,
+      "avgPrice": 253.19,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -478,5 +492,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T13:05:37.786Z"
+  "savedAt": "2026-03-30T13:05:57.961Z"
 }

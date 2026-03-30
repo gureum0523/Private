@@ -556,6 +556,20 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 10018.08
+    },
+    {
+      "id": "1774882500891",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "ISA",
+      "currency": "KRW",
+      "ticker": "379800",
+      "name": "KODEX미국S&P500",
+      "type": "etf",
+      "qty": 1883,
+      "avgPrice": 21317,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -563,5 +577,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:41:35.196Z"
+  "savedAt": "2026-03-30T14:55:00.892Z"
 }

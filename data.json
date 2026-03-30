@@ -693,7 +693,7 @@
       "subAcct": "주식",
       "currency": "KRW",
       "ticker": "192090",
-      "name": "TIGER차이나CSI300",
+      "name": "TIGER 차이나CSI300",
       "type": "etf",
       "qty": 900,
       "avgPrice": 9845,
@@ -707,7 +707,7 @@
       "subAcct": "주식",
       "currency": "KRW",
       "ticker": "435420",
-      "name": "TIGER미국나스닥100채권혼합Fn",
+      "name": "TIGER 미국나스닥100채권혼합Fn",
       "type": "etf",
       "qty": 379,
       "avgPrice": 13139.08,
@@ -735,7 +735,7 @@
       "subAcct": "주식",
       "currency": "KRW",
       "ticker": "463250",
-      "name": "TIGERK방산&우주",
+      "name": "TIGER K방산&우주",
       "type": "etf",
       "qty": 185,
       "avgPrice": 29789.81,
@@ -1025,5 +1025,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:26:40.743Z"
+  "savedAt": "2026-03-30T15:35:46.307Z"
 }

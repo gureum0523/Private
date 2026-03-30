@@ -713,6 +713,20 @@
       "avgPrice": 13139.08,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882994485",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "453870",
+      "name": "TIGER인도니프티50",
+      "type": "etf",
+      "qty": 776,
+      "avgPrice": 13529.79,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -720,5 +734,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:02:27.604Z"
+  "savedAt": "2026-03-30T15:03:14.486Z"
 }

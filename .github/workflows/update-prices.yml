@@ -28,7 +28,7 @@ jobs:
           import os
  
           US_TICKERS = ["VTI","GLDM","VOO","BRK-B","QQQM","AAPL","NVDA","EPI","TSLA","GOOGL"]
-          KR_TICKERS = ["379800.KS","0046A0.KS","0060H0.KS","0072R0.KS","130680.KS","453870.KS","073240.KS"]
+          KR_TICKERS = ["379800.KS","0046A0.KS","0060H0.KS","0072R0.KS","130680.KS","453870.KS","073240.KS","192090.KS","435420.KS","463250.KS"]
  
           def fetch_one(ticker):
               try:

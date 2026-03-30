@@ -741,6 +741,21 @@
       "avgPrice": 29789.81,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883071782",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "productName": "예수금",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 216958,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 216958
     }
   ],
   "rates": {
@@ -748,5 +763,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:04:01.362Z"
+  "savedAt": "2026-03-30T15:04:31.783Z"
 }

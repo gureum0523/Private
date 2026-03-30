@@ -629,6 +629,20 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 23362
+    },
+    {
+      "id": "1774882701287",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "0046A0",
+      "name": "TIGER미국초단기(3개월이하)국채",
+      "type": "etf",
+      "qty": 517,
+      "avgPrice": 9655,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -636,5 +650,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:57:41.331Z"
+  "savedAt": "2026-03-30T14:58:21.287Z"
 }

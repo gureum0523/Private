@@ -541,6 +541,21 @@
       "startDate": "2026-03-24",
       "endDate": "2026-03-31",
       "memo": ""
+    },
+    {
+      "id": "1774876156758",
+      "assetClass": "save",
+      "mainAcct": "aw",
+      "subAcct": "Others",
+      "productName": "Week",
+      "kind": "manual",
+      "currency": "SAR",
+      "principal": 10018.08,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 10018.08
     }
   ],
   "rates": {
@@ -548,5 +563,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T13:08:21.510Z"
+  "savedAt": "2026-03-30T13:09:16.758Z"
 }

@@ -960,6 +960,21 @@
       "avgPrice": 23.42,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883830089",
+      "assetClass": "save",
+      "mainAcct": "sa",
+      "subAcct": "주식",
+      "productName": "SAB stock예수금",
+      "kind": "manual",
+      "currency": "SAR",
+      "principal": 16036.06,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 16036.06
     }
   ],
   "rates": {
@@ -967,5 +982,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:16:42.728Z"
+  "savedAt": "2026-03-30T15:17:10.089Z"
 }

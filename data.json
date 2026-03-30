@@ -986,7 +986,7 @@
       "name": "Alphabet Inc-cl A",
       "type": "stock",
       "qty": 5,
-      "avgPrice": 1370,
+      "avgPrice": 176.75,
       "currentPrice": null,
       "lastUpdated": null
     }
@@ -996,5 +996,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:18:05.084Z"
+  "savedAt": "2026-03-30T15:18:51.533Z"
 }

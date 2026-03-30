@@ -685,6 +685,20 @@
       "avgPrice": 4095.43,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882879296",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "192090",
+      "name": "TIGER차이나CSI300",
+      "type": "etf",
+      "qty": 900,
+      "avgPrice": 9845,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -692,5 +706,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:00:15.967Z"
+  "savedAt": "2026-03-30T15:01:19.296Z"
 }

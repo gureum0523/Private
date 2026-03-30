@@ -890,6 +890,20 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 9050000
+    },
+    {
+      "id": "1774883546996",
+      "assetClass": "stock",
+      "mainAcct": "kr",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "073240",
+      "name": "금호타이어",
+      "type": "stock",
+      "qty": 1,
+      "avgPrice": 6080,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -897,5 +911,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:11:26.881Z"
+  "savedAt": "2026-03-30T15:12:26.997Z"
 }

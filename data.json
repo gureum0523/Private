@@ -429,6 +429,20 @@
       "avgPrice": 338.89,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774875883046",
+      "assetClass": "stock",
+      "mainAcct": "aw",
+      "subAcct": "Stock",
+      "currency": "USD",
+      "ticker": "GLDM",
+      "name": "SPDR Gold MiniShares Trust",
+      "type": "etf",
+      "qty": 15.67,
+      "avgPrice": 80.89,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -436,5 +450,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T13:04:07.276Z"
+  "savedAt": "2026-03-30T13:04:43.047Z"
 }

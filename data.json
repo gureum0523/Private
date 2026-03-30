@@ -527,6 +527,20 @@
       "avgPrice": 46.52,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774876101510",
+      "assetClass": "save",
+      "mainAcct": "aw",
+      "subAcct": "Murabaha",
+      "productName": "Week",
+      "kind": "deposit",
+      "currency": "SAR",
+      "principal": 63924,
+      "interestRate": 3.65,
+      "startDate": "2026-03-24",
+      "endDate": "2026-03-31",
+      "memo": ""
     }
   ],
   "rates": {
@@ -534,5 +548,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T13:07:25.726Z"
+  "savedAt": "2026-03-30T13:08:21.510Z"
 }

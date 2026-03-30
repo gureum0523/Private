@@ -513,6 +513,20 @@
       "avgPrice": 174.6,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774876045726",
+      "assetClass": "stock",
+      "mainAcct": "aw",
+      "subAcct": "Stock",
+      "currency": "USD",
+      "ticker": "EPI",
+      "name": "WisdomTree India Earnings Fund",
+      "type": "etf",
+      "qty": 5.69,
+      "avgPrice": 46.52,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -520,5 +534,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T13:06:58.047Z"
+  "savedAt": "2026-03-30T13:07:25.726Z"
 }

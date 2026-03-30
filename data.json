@@ -830,6 +830,21 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 2680756
+    },
+    {
+      "id": "1774883250895",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "외화",
+      "productName": "USD",
+      "kind": "manual",
+      "currency": "USD",
+      "principal": 47923,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 47923
     }
   ],
   "rates": {
@@ -837,5 +852,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:07:17.234Z"
+  "savedAt": "2026-03-30T15:07:30.896Z"
 }

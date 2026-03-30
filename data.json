@@ -845,6 +845,21 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 47923
+    },
+    {
+      "id": "1774883433402",
+      "assetClass": "save",
+      "mainAcct": "kr",
+      "subAcct": "예적금",
+      "productName": "하나은행보통예금",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 1654596,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 1654596
     }
   ],
   "rates": {
@@ -852,5 +867,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:07:30.896Z"
+  "savedAt": "2026-03-30T15:10:33.403Z"
 }

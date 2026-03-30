@@ -785,6 +785,21 @@
       "avgPrice": 20506.34,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883181747",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "개인연금",
+      "productName": "PLUS국공채머니마켓액티브",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 2987000,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 3006430
     }
   ],
   "rates": {
@@ -792,5 +807,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:05:49.459Z"
+  "savedAt": "2026-03-30T15:06:21.747Z"
 }

@@ -989,6 +989,20 @@
       "avgPrice": 176.75,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883961930",
+      "assetClass": "stock",
+      "mainAcct": "sa",
+      "subAcct": "주식",
+      "currency": "USD",
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500",
+      "type": "etf",
+      "qty": 5.1841,
+      "avgPrice": 579.67,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -996,5 +1010,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:18:51.533Z"
+  "savedAt": "2026-03-30T15:19:21.930Z"
 }

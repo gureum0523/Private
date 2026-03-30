@@ -415,6 +415,20 @@
       "avgPrice": 579.67,
       "currentPrice": 582.96,
       "lastUpdated": "2026-03-30T12:54:50.567Z"
+    },
+    {
+      "id": "1774875847276",
+      "assetClass": "stock",
+      "mainAcct": "aw",
+      "subAcct": "Stock",
+      "currency": "USD",
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
+      "type": "stock",
+      "qty": 3.91,
+      "avgPrice": 338.89,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -422,5 +436,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T12:54:50.567Z"
+  "savedAt": "2026-03-30T13:04:07.276Z"
 }

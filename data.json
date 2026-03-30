@@ -727,6 +727,20 @@
       "avgPrice": 13529.79,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883041361",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "463250",
+      "name": "TIGERK방산&우주",
+      "type": "etf",
+      "qty": 185,
+      "avgPrice": 29789.81,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -734,5 +748,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:03:14.486Z"
+  "savedAt": "2026-03-30T15:04:01.362Z"
 }

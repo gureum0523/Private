@@ -1003,6 +1003,21 @@
       "avgPrice": 579.67,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774884011058",
+      "assetClass": "save",
+      "mainAcct": "sa",
+      "subAcct": "예적금",
+      "productName": "SAB",
+      "kind": "manual",
+      "currency": "SAR",
+      "principal": 24000,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 24000
     }
   ],
   "rates": {
@@ -1010,5 +1025,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:19:21.930Z"
+  "savedAt": "2026-03-30T15:20:11.058Z"
 }

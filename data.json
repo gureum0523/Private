@@ -699,6 +699,20 @@
       "avgPrice": 9845,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882947604",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "435420",
+      "name": "TIGER미국나스닥100채권혼합Fn",
+      "type": "etf",
+      "qty": 379,
+      "avgPrice": 13139.08,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -706,5 +720,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:01:19.296Z"
+  "savedAt": "2026-03-30T15:02:27.604Z"
 }

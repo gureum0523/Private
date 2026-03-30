@@ -932,6 +932,20 @@
       "avgPrice": 12.75,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774883663559",
+      "assetClass": "stock",
+      "mainAcct": "kr",
+      "subAcct": "주식",
+      "currency": "KRW",
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "type": "stock",
+      "qty": 0.000069,
+      "avgPrice": 0.02,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -939,5 +953,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:13:44.687Z"
+  "savedAt": "2026-03-30T15:14:23.559Z"
 }

@@ -756,6 +756,35 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 216958
+    },
+    {
+      "id": "1774883103086",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "CMA",
+      "productName": "예수금",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 1073599,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 1073599
+    },
+    {
+      "id": "1774883149459",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "개인연금",
+      "currency": "KRW",
+      "ticker": "379800",
+      "name": "KODEX미국S&P500",
+      "type": "etf",
+      "qty": 344,
+      "avgPrice": 20506.34,
+      "currentPrice": null,
+      "lastUpdated": null
     }
   ],
   "rates": {
@@ -763,5 +792,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T15:04:31.783Z"
+  "savedAt": "2026-03-30T15:05:49.459Z"
 }

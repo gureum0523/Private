@@ -599,6 +599,21 @@
       "avgPrice": 21400,
       "currentPrice": null,
       "lastUpdated": null
+    },
+    {
+      "id": "1774882630755",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "IRP",
+      "productName": "미래에셋국공채전용MMFA1호(국공채)C-P2e(퇴직)",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 1902705,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 1913754
     }
   ],
   "rates": {
@@ -606,5 +621,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:56:23.832Z"
+  "savedAt": "2026-03-30T14:57:10.755Z"
 }

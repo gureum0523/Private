@@ -614,6 +614,21 @@
       "endDate": "",
       "memo": "",
       "currentAmount": 1913754
+    },
+    {
+      "id": "1774882647809",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "IRP",
+      "productName": "미래에셋증권현금성자산",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 23362,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 23362
     }
   ],
   "rates": {
@@ -621,5 +636,5 @@
     "SAR": 402.1493,
     "JPY": 9.443923950195312
   },
-  "savedAt": "2026-03-30T14:57:10.755Z"
+  "savedAt": "2026-03-30T14:57:27.809Z"
 }

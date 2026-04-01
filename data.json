@@ -9,8 +9,8 @@
       "type": "etf",
       "qty": 3.91,
       "avgPrice": 338.89,
-      "currentPrice": 313.09,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 320.81,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -24,8 +24,8 @@
       "type": "etf",
       "qty": 15.67,
       "avgPrice": 80.89,
-      "currentPrice": 89.34,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 92.69,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -39,8 +39,8 @@
       "type": "etf",
       "qty": 19.51,
       "avgPrice": 621.74,
-      "currentPrice": 582.96,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 597.55,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -54,8 +54,8 @@
       "type": "etf",
       "qty": 2.6,
       "avgPrice": 484.32,
-      "currentPrice": 468.49,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 479.2,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -69,8 +69,8 @@
       "type": "etf",
       "qty": 20.74,
       "avgPrice": 253.19,
-      "currentPrice": 231.61,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 237.62,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -84,8 +84,8 @@
       "type": "stock",
       "qty": 5,
       "avgPrice": 215.67,
-      "currentPrice": 248.8,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 253.79,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -99,8 +99,8 @@
       "type": "stock",
       "qty": 8,
       "avgPrice": 174.6,
-      "currentPrice": 167.52,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 174.4,
+      "lastUpdated": "2026-04-01T08:15:33.334Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -114,8 +114,8 @@
       "type": "etf",
       "qty": 5.69,
       "avgPrice": 46.52,
-      "currentPrice": 39.81,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 40.8,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -143,8 +143,8 @@
       "type": "etf",
       "qty": 1883,
       "avgPrice": 21317,
-      "currentPrice": 22320,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 22215,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -158,8 +158,8 @@
       "type": "etf",
       "qty": 193,
       "avgPrice": 21400,
-      "currentPrice": 22320,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 22215,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -188,8 +188,8 @@
       "type": "etf",
       "qty": 517,
       "avgPrice": 9655,
-      "currentPrice": 10455,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 10580,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -203,8 +203,8 @@
       "type": "etf",
       "qty": 483,
       "avgPrice": 10328,
-      "currentPrice": 11985,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 11880,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -218,8 +218,8 @@
       "type": "etf",
       "qty": 1026,
       "avgPrice": 9745,
-      "currentPrice": 14480,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 15030,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -233,8 +233,8 @@
       "type": "etf",
       "qty": 1345,
       "avgPrice": 4095,
-      "currentPrice": 6375,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 6900,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -248,8 +248,8 @@
       "type": "etf",
       "qty": 1048,
       "avgPrice": 19077.5,
-      "currentPrice": 22320,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 22215,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -263,8 +263,8 @@
       "type": "etf",
       "qty": 776,
       "avgPrice": 13529.8,
-      "currentPrice": 12230,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 12170,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -293,8 +293,8 @@
       "type": "etf",
       "qty": 344,
       "avgPrice": 20506,
-      "currentPrice": 22320,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 22215,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -366,8 +366,8 @@
       "type": "stock",
       "qty": 1,
       "avgPrice": 6080,
-      "currentPrice": 6250,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 5950,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -381,8 +381,8 @@
       "type": "etf",
       "qty": 3,
       "avgPrice": 74610,
-      "currentPrice": 22320,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 22215,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "kr",
       "subAcct": "주식",
       "currency": "KRW"
@@ -396,8 +396,8 @@
       "type": "stock",
       "qty": 0.046595,
       "avgPrice": 12.75,
-      "currentPrice": 248.8,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 253.79,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -411,8 +411,8 @@
       "type": "stock",
       "qty": 0.000069,
       "avgPrice": 0.02,
-      "currentPrice": 361.83,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 371.75,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -486,8 +486,8 @@
       "type": "stock",
       "qty": 5,
       "avgPrice": 176.75,
-      "currentPrice": 274.34,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 287.56,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
@@ -501,17 +501,17 @@
       "type": "etf",
       "qty": 5.1841,
       "avgPrice": 579.67,
-      "currentPrice": 582.96,
-      "lastUpdated": "2026-03-29T15:56:29Z",
+      "currentPrice": 597.55,
+      "lastUpdated": "2026-04-01T08:15:33.335Z",
       "mainAcct": "ms",
       "subAcct": "Stock",
       "currency": "USD"
     }
   ],
   "rates": {
-    "USD": 1508.06005859375,
-    "SAR": 402.1493,
-    "JPY": 9.443923950195312
+    "USD": 1508.97998046875,
+    "SAR": 402.3947,
+    "JPY": 9.525069236755371
   },
-  "savedAt": "2026-04-01T08:15:24.299Z"
+  "savedAt": "2026-04-01T08:16:02.866Z"
 }

@@ -167,7 +167,7 @@
     {
       "id": "1774790649052",
       "assetClass": "save",
-      "productName": "Ã«Â¯Â¸Ã«ÂÂÃ¬ÂÂÃ¬ÂÂÃªÂµÂ­ÃªÂ³ÂµÃ¬Â±ÂÃ¬Â ÂÃ¬ÂÂ©MMFA1Ã­ÂÂ¸(ÃªÂµÂ­ÃªÂ³ÂµÃ¬Â±Â)C-P2e(Ã­ÂÂ´Ã¬Â§Â)",
+      "productName": "미래에셋국공채전용MMFA1호(국공채)C-P2e(퇴직)",
       "kind": "manual",
       "currency": "KRW",
       "principal": 1902705,
@@ -302,7 +302,7 @@
     {
       "id": "1774791198835",
       "assetClass": "save",
-      "productName": "PLUSÃªÂµÂ­ÃªÂ³ÂµÃ¬Â±ÂÃ«Â¨Â¸Ã«ÂÂÃ«Â§ÂÃ¬Â¼ÂÃ¬ÂÂ¡Ã­ÂÂ°Ã«Â¸Â",
+      "productName": "PLUS국공채머니마켓액티브",
       "kind": "manual",
       "currency": "KRW",
       "principal": 2987000,
@@ -345,7 +345,7 @@
     {
       "id": "1774791413327",
       "assetClass": "save",
-      "productName": "Ã«Â¯Â¸Ã«ÂÂÃ¬ÂÂÃ¬ÂÂÃ¬ÂÂÃ¬ÂÂÃªÂ¸Â",
+      "productName": "미래에셋증권현금성자산",
       "kind": "manual",
       "currency": "KRW",
       "principal": 515243,
@@ -420,7 +420,7 @@
     {
       "id": "1774791659151",
       "assetClass": "save",
-      "productName": "Ã­ÂÂÃ«ÂÂÃ¬ÂÂÃ­ÂÂÃ«Â³Â´Ã­ÂÂµÃ¬ÂÂÃªÂ¸Â",
+      "productName": "하나은행보통예금",
       "kind": "manual",
       "currency": "KRW",
       "principal": 1704596,
@@ -435,7 +435,7 @@
     {
       "id": "1774791684795",
       "assetClass": "save",
-      "productName": "ÃªÂµÂ­Ã«Â¯Â¼Ã¬ÂÂÃ­ÂÂÃ«Â³Â´Ã­ÂÂµÃ¬ÂÂÃªÂ¸Â",
+      "productName": "국민은행보통예금",
       "kind": "manual",
       "currency": "KRW",
       "principal": 288119,
@@ -450,7 +450,7 @@
     {
       "id": "1774791715040",
       "assetClass": "save",
-      "productName": "Ã¬Â£Â¼Ã­ÂÂÃ¬Â²Â­",
+      "productName": "주택청약",
       "kind": "manual",
       "currency": "KRW",
       "principal": 9050000,

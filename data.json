@@ -1,9 +1,83 @@
 {
-  "assets": [],
+  "assets": [
+    {
+      "id": "1775028955739",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "ISA",
+      "currency": "KRW",
+      "ticker": "379800",
+      "name": "KODEX미국S&P500",
+      "type": "etf",
+      "qty": 1883,
+      "avgPrice": 21317.36325013277,
+      "currentPrice": null,
+      "lastUpdated": null
+    },
+    {
+      "id": "1775028986846",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "ISA",
+      "productName": "예수금",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 231159,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 231159
+    },
+    {
+      "id": "1775029029728",
+      "assetClass": "stock",
+      "mainAcct": "ms",
+      "subAcct": "IRP",
+      "currency": "KRW",
+      "ticker": "379800",
+      "name": "KODEX미국S&P500",
+      "type": "etf",
+      "qty": 193,
+      "avgPrice": 21400.9067357513,
+      "currentPrice": null,
+      "lastUpdated": null
+    },
+    {
+      "id": "1775029076325",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "IRP",
+      "productName": "미래에셋국공채전용MMFA1호(국공채)퇴직",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 1902705,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 1914313
+    },
+    {
+      "id": "1775029109397",
+      "assetClass": "save",
+      "mainAcct": "ms",
+      "subAcct": "IRP",
+      "productName": "예수금",
+      "kind": "manual",
+      "currency": "KRW",
+      "principal": 23364,
+      "interestRate": 0,
+      "startDate": "",
+      "endDate": "",
+      "memo": "",
+      "currentAmount": 23364
+    }
+  ],
   "rates": {
-    "USD": 1350,
-    "SAR": 360,
-    "JPY": 9
+    "USD": 1530.9599609375,
+    "SAR": 408.256,
+    "JPY": 9.593164443969727
   },
-  "savedAt": "2026-03-31T08:13:14.293Z"
+  "savedAt": "2026-04-01T07:38:36.118Z"
 }

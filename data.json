@@ -11,8 +11,8 @@
       "type": "etf",
       "qty": 1883,
       "avgPrice": 21317.36325013277,
-      "currentPrice": 22215,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 23940,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775028986846",
@@ -22,12 +22,12 @@
       "productName": "예수금",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 231159,
+      "principal": 232004,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 231159
+      "currentAmount": 232004
     },
     {
       "id": "1775029029728",
@@ -40,8 +40,8 @@
       "type": "etf",
       "qty": 193,
       "avgPrice": 21400.9067357513,
-      "currentPrice": 22215,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 23940,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029076325",
@@ -59,21 +59,6 @@
       "currentAmount": 1914313
     },
     {
-      "id": "1775029109397",
-      "assetClass": "save",
-      "mainAcct": "ms",
-      "subAcct": "IRP",
-      "productName": "예수금",
-      "kind": "manual",
-      "currency": "KRW",
-      "principal": 23364,
-      "interestRate": 0,
-      "startDate": "",
-      "endDate": "",
-      "memo": "",
-      "currentAmount": 23364
-    },
-    {
       "id": "1775029206451",
       "assetClass": "stock",
       "mainAcct": "ms",
@@ -84,8 +69,8 @@
       "type": "etf",
       "qty": 517,
       "avgPrice": 9655,
-      "currentPrice": 10580,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 10205,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029244690",
@@ -98,8 +83,8 @@
       "type": "etf",
       "qty": 483,
       "avgPrice": 10328.01242236025,
-      "currentPrice": 11880,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 12750,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029291567",
@@ -112,8 +97,8 @@
       "type": "etf",
       "qty": 1026,
       "avgPrice": 9745,
-      "currentPrice": 15030,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 14765,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029333152",
@@ -126,8 +111,8 @@
       "type": "etf",
       "qty": 1345,
       "avgPrice": 4095.434944237918,
-      "currentPrice": 6900,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 7205,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029371455",
@@ -140,8 +125,8 @@
       "type": "etf",
       "qty": 900,
       "avgPrice": 9845,
-      "currentPrice": 13035,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 13495,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029413921",
@@ -154,8 +139,8 @@
       "type": "etf",
       "qty": 1048,
       "avgPrice": 19077.5,
-      "currentPrice": 22215,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 23940,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029485908",
@@ -168,8 +153,8 @@
       "type": "etf",
       "qty": 379,
       "avgPrice": 13139.0765171504,
-      "currentPrice": 13280,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 14080,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029534463",
@@ -182,8 +167,8 @@
       "type": "etf",
       "qty": 776,
       "avgPrice": 13529.78737113402,
-      "currentPrice": 12170,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 12520,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029580019",
@@ -196,8 +181,8 @@
       "type": "etf",
       "qty": 185,
       "avgPrice": 29789.81081081081,
-      "currentPrice": 40960,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 50305,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029635298",
@@ -207,12 +192,12 @@
       "productName": "예수금",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 216967,
+      "principal": 231681,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 216967
+      "currentAmount": 231681
     },
     {
       "id": "1775029713352",
@@ -222,12 +207,12 @@
       "productName": "CMA",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 1073657,
+      "principal": 1276099,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 1073657
+      "currentAmount": 1276099
     },
     {
       "id": "1775029772367",
@@ -240,8 +225,8 @@
       "type": "etf",
       "qty": 344,
       "avgPrice": 20506.33720930233,
-      "currentPrice": 22215,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 23940,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775029813517",
@@ -266,12 +251,12 @@
       "productName": "예수금",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 43765,
+      "principal": 43927,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 43765
+      "currentAmount": 43927
     },
     {
       "id": "1775029864409",
@@ -296,12 +281,12 @@
       "productName": "USD",
       "kind": "manual",
       "currency": "USD",
-      "principal": 47930,
+      "principal": 47937,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 47930
+      "currentAmount": 47937
     },
     {
       "id": "1775029967001",
@@ -314,8 +299,8 @@
       "type": "stock",
       "qty": 1,
       "avgPrice": 6080,
-      "currentPrice": 5950,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 6110,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030023212",
@@ -328,8 +313,8 @@
       "type": "etf",
       "qty": 3,
       "avgPrice": 24870,
-      "currentPrice": 22215,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 23940,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030073849",
@@ -342,8 +327,8 @@
       "type": "stock",
       "qty": 0.046595,
       "avgPrice": 273.634510140573,
-      "currentPrice": 253.79,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 267.61,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030123912",
@@ -356,8 +341,8 @@
       "type": "stock",
       "qty": 0.000069,
       "avgPrice": 289.8550724637681,
-      "currentPrice": 371.75,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 378.67,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030243901",
@@ -367,12 +352,12 @@
       "productName": "하나은행보통예금",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 1628596,
+      "principal": 228596,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 1628596
+      "currentAmount": 228596
     },
     {
       "id": "1775030306177",
@@ -382,12 +367,12 @@
       "productName": "주택청약",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 9050000,
+      "principal": 9300000,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 9050000
+      "currentAmount": 9300000
     },
     {
       "id": "1775030326551",
@@ -397,12 +382,12 @@
       "productName": "국민은행보통예금",
       "kind": "manual",
       "currency": "KRW",
-      "principal": 288119,
+      "principal": 82929,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 288119
+      "currentAmount": 82929
     },
     {
       "id": "1775030400729",
@@ -413,10 +398,10 @@
       "ticker": "VOO",
       "name": "VanguardS&P500",
       "type": "etf",
-      "qty": 19.51,
-      "avgPrice": 621.74,
-      "currentPrice": 597.55,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "qty": 21.51,
+      "avgPrice": 619.72,
+      "currentPrice": 657.5,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030434440",
@@ -429,8 +414,8 @@
       "type": "etf",
       "qty": 15.67,
       "avgPrice": 80.89,
-      "currentPrice": 92.69,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 92.63,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030465065",
@@ -443,8 +428,8 @@
       "type": "stock",
       "qty": 8,
       "avgPrice": 174.6,
-      "currentPrice": 174.4,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 216.61,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030492928",
@@ -457,8 +442,8 @@
       "type": "etf",
       "qty": 20.74,
       "avgPrice": 253.19,
-      "currentPrice": 237.62,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 273.51,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030511758",
@@ -471,8 +456,8 @@
       "type": "stock",
       "qty": 5,
       "avgPrice": 215.67,
-      "currentPrice": 253.79,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 267.61,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030533397",
@@ -485,8 +470,8 @@
       "type": "etf",
       "qty": 3.91,
       "avgPrice": 338.89,
-      "currentPrice": 320.81,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 352.53,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030556526",
@@ -499,8 +484,8 @@
       "type": "etf",
       "qty": 5.69,
       "avgPrice": 46.52,
-      "currentPrice": 40.8,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 43.3,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030573002",
@@ -511,10 +496,10 @@
       "ticker": "BRK.B",
       "name": "BRK.B",
       "type": "etf",
-      "qty": 2.6,
-      "avgPrice": 484.32,
-      "currentPrice": 479.2,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "qty": 5.76,
+      "avgPrice": 478.06,
+      "currentPrice": 472.81,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030636845",
@@ -538,12 +523,12 @@
       "productName": "예수금",
       "kind": "manual",
       "currency": "SAR",
-      "principal": 10000.45,
+      "principal": 2.8,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 10000.45
+      "currentAmount": 2.8
     },
     {
       "id": "1775030723630",
@@ -553,12 +538,12 @@
       "productName": "SAB",
       "kind": "manual",
       "currency": "SAR",
-      "principal": 14613.15,
+      "principal": 30327.53,
       "interestRate": 0,
       "startDate": "",
       "endDate": "",
       "memo": "",
-      "currentAmount": 14613.15
+      "currentAmount": 30327.53
     },
     {
       "id": "1775030801064",
@@ -585,8 +570,8 @@
       "type": "stock",
       "qty": 5,
       "avgPrice": 176.75,
-      "currentPrice": 287.56,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 350.34,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     },
     {
       "id": "1775030889212",
@@ -599,14 +584,14 @@
       "type": "etf",
       "qty": 5.1841,
       "avgPrice": 579.67,
-      "currentPrice": 597.55,
-      "lastUpdated": "2026-04-01T08:12:32.884Z"
+      "currentPrice": 657.5,
+      "lastUpdated": "2026-04-28T09:20:28.803Z"
     }
   ],
   "rates": {
-    "USD": 1508.97998046875,
-    "SAR": 402.3947,
-    "JPY": 9.525069236755371
+    "USD": 1473.8900146484375,
+    "SAR": 393.0373,
+    "JPY": 9.22599983215332
   },
-  "savedAt": "2026-04-01T08:47:50.262Z"
+  "savedAt": "2026-04-28T09:20:31.856Z"
 }
